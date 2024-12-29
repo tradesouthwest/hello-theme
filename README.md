@@ -4,12 +4,19 @@
 This file is REQUIRED and is overridden by the typically used WP file, readme.txt - Please do not forget to include this file in a new theme. Read the `readme.txt` file to learn what this Hello Theme does.
 
 Requires PHP: 7.4
+
 Requires CP:  1.4
+
 Version:      1.0.4
+
 Author:       Hello Author
+
 Tags:         two-columns, translation-ready, featured-images, blog, e-commerce, news, custom-menu, custom-background, custom-logo, custom-header
+
 License:      GPL 3 (see LICENSE)
+
 Text domain:  hello-theme
+
 URI:          https://github.com/youraccount/theme
 
 ## Description: 
