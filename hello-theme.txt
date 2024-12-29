@@ -7,6 +7,7 @@ that is for authors to be able to have a centralized place to keep their working
 Best practice for hosting themes, unlike WP, is to "self-host" your themes and plugins on a Github.com repository.
 Once you have a working copy of your theme, you can then create a new Release [1] and login to your ClassicPress.net 
 account to add the Release url to the ClassicPress directory. https://directory.classicpress.net 
+
 == Description ==
 
 Hellotheme is a ClassicPress CMS starter, helper for building themes for ClassicPress.
@@ -21,6 +22,8 @@ Hellotheme is a ClassicPress CMS starter, helper for building themes for Classic
 
 === Links ===
 
-- docs
+- Theme and Plugin Development Documentation https://docs.classicpress.net/
+- Directory for Plugins and Themes https://directory.classicpress.net 
+
  === Ref. ===
  [1] https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
