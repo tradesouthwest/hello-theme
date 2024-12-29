@@ -2,7 +2,7 @@
 
 These files can be used to help theme authors get the basics that are involved in starting on creating
 themes for ClassicPress. ClassicPress does not have a repository, like WordPress, but we do have a directory 
-that is for authors to be able to have a centralized place to keep their themes; and plugins.
+that is for authors to be able to have a centralized place to keep their working uri for themes and plugins releases.
 
 Best practice for hosting themes, unlike WP, is to "self-host" your themes and plugins on a Github.com repository.
 Once you have a working copy of your theme, you can then create a new Release [1] and login to your ClassicPress.net 
