@@ -1,5 +1,18 @@
 == Guidelines for making a theme for ClassicPress CMS ==
 
+These files can be used to help theme authors get the basics that are involved in starting on creating
+themes for ClassicPress. ClassicPress does not have a repository, like WordPress, but we do have a directory 
+that is for authors to be able to have a centralized place to keep their themes; and plugins.
+
+Best practice for hosting themes, unlike WP, is to "self-host" your themes and plugins on a Github.com repository.
+Once you have a working copy of your theme, you can then create a new Release [1] and login to your ClassicPress.net 
+account to add the Release url to the ClassicPress directory. https://directory.classicpress.net 
+== Description ==
+
+Hellotheme is a ClassicPress CMS starter, helper for building themes for ClassicPress.
+
+== Contents ==
+
 - File Header requirements
 - Stylesheet Header requirements
 - Image folder for assets (includes blank banner starter)
@@ -9,3 +22,5 @@
 === Links ===
 
 - docs
+ === Ref. ===
+ [1] https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
