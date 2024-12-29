@@ -1,0 +1,11 @@
+== Guidelines for making a theme for ClassicPress CMS ==
+
+- File Header requirements
+- Stylesheet Header requirements
+- Image folder for assets (includes blank banner starter)
+- Blank screenshot.png (for size reference)
+- PHP Code Standard unit test file (optional)
+
+=== Links ===
+
+- docs
