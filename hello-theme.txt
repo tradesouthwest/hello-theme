@@ -1,6 +1,6 @@
 == Guidelines for making a theme for ClassicPress CMS ==
 
-Hello-theme is a ClassicPress CMS helper for building themes for ClassicPress.
+Hello-theme is a ClassicPress CMS, helper for building themes for ClassicPress.
 
 == Description ==
 
@@ -18,10 +18,10 @@ There is a theme unit data xml file for testing themes which does not have the W
 
 == Contents ==
 
-- File Header requirements for README.md`[2]`
-- Stylesheet Header requirements
+- File Header requirements for README.md`[2]` This file is required for themes!
+- Stylesheet Header requirements. This file is required for themes!
+- Blank screenshot.png (for size reference)  This file type is required for themes!
 - Image folder for assets (includes blank banner starter. Naming convention is `banner-1544x500`)
-- Blank screenshot.png (for size reference)
 - PHP Code Standard unit test file (optional) change line 17 `hello-theme` to match your text-domain.
 
 === Links ===
