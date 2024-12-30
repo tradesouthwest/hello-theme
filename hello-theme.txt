@@ -1,29 +1,37 @@
 == Guidelines for making a theme for ClassicPress CMS ==
 
-These files can be used to help theme authors get the basics that are involved in starting on creating
-themes for ClassicPress. ClassicPress does not have a repository, like WordPress, but we do have a directory 
-that is for authors to be able to have a centralized place to keep their working uri for themes and plugins releases.
-
-Best practice for hosting themes, unlike WP, is to "self-host" your themes and plugins on a Github.com repository.
-Once you have a working copy of your theme, you can then create a new Release [1] and login to your ClassicPress.net 
-account to add the Release url to the ClassicPress directory. https://directory.classicpress.net 
+Hello-theme is a ClassicPress CMS helper for building themes for ClassicPress.
 
 == Description ==
 
-Hellotheme is a ClassicPress CMS starter, helper for building themes for ClassicPress.
+These files can be used to help theme authors get the basics that are involved in starting on creating
+themes for ClassicPress. ClassicPress does not have a repository, like WordPress, but we do have a directory 
+that is for authors to be able to have a **centralized place to keep their working uri** for themes and plugins releases.
+
+Best practice for hosting themes, unlike WP, is to "self-host" your themes and plugins on a Github.com repository.
+Once you have a working copy of your theme, you can then create a new Release`[1]` and login to your ClassicPress.net 
+account to add the Release url to the ClassicPress directory. https://directory.classicpress.net 
+
+Additional reading to help **speed up the review process** and allow you to run the CPCS (PHPCS) test on your own: https://github.com/ClassicPress/dev-workflows`[3]`
+
+There is a theme unit data xml file for testing themes which does not have the WP blocks or any of the odd-ball WP test data that is not pertinent to CP. You can download it here: https://github.com/tradesouthwest/classicpress-helpers
 
 == Contents ==
 
-- File Header requirements
+- File Header requirements for README.md`[2]`
 - Stylesheet Header requirements
-- Image folder for assets (includes blank banner starter)
+- Image folder for assets (includes blank banner starter. Naming convention is `banner-1544x500`)
 - Blank screenshot.png (for size reference)
-- PHP Code Standard unit test file (optional)
+- PHP Code Standard unit test file (optional) change line 17 `xxxxxxxx` to match your text-domain.
 
 === Links ===
 
+- All the requirements for plugins/themes can be found here for the directory: https://docs.classicpress.net/plugin-guidelines/directory-requirements/
+- ClassicPress workflows for Plugins and Themes Developers https://github.com/ClassicPress/dev-workflows
 - Theme and Plugin Development Documentation https://docs.classicpress.net/
 - Directory for Plugins and Themes https://directory.classicpress.net 
 
  === Ref. ===
- [1] https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
+ `[1]` https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
+ `[2]` https://docs.classicpress.net/plugin-guidelines/directory-requirements/
+ `[3]` For Contributing: https://github.com/ClassicPress/ClassicPress/blob/develop/.github/CONTRIBUTING.md

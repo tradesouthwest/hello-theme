@@ -1,3 +1,4 @@
+/* THIS IS AN EXAMPLE OF A TYPICAL HEADERS ENTRY */
 /*
 Theme Name:   Themename
 Theme URI:    http://yourwebsite.com/
@@ -16,4 +17,15 @@ License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Themename ClassicPress Theme, Copyright 2014 TSW
 Themename is distributed under the terms of the GNU GPL
+*/
+
+/* THIS WOULD BE THE MINIMUN REQUIRED */
+/*
+Theme Name: Name of your theme
+
+Description: A description of your theme.
+Requires PHP: 7.2
+Requires CP: 1.4
+Premium URI: https://website.com/premium-theme/
+
 */
