@@ -55,9 +55,10 @@ function hello_theme_theme_setup() {
 	*/
     load_theme_textdomain( 'hello-theme', get_template_directory_uri() . '/languages' );
 }
+
+add_action( 'after_setup_theme', 'hello_theme_theme_setup' );
 endif
 
-add_action('after_setup_theme','hello_theme_theme_setup');
 
 /**
  * `wp_body_open` Tag may or may not be needed but accommodate for it.
