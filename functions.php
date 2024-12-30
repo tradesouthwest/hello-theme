@@ -39,7 +39,7 @@ function hello_theme_theme_setup() {
      * Not used in ClassicPress < 2.0 
      * to output valid HTML5.
      */ 
-    hello_theme_run_if_classicpress_version_greater_than_2_0(function() {
+    if ( function_exists( 'is_classicpress' ) && version_compare( '2.0', $cp_version, '<' ) ) {
         add_theme_support( 'html5', array(
             'search-form',
             'comment-form',
@@ -71,21 +71,6 @@ if ( ! function_exists( 'wp_body_open' ) ) {
     function wp_body_open() {
         do_action( 'wp_body_open' );
     }
-}
-
-/**
- * Runs a function only if ClassicPress version is greater than 2.0.
- *
- * @param callable $callback The function to execute.
- * @return mixed The return value of the callback if the version is compatible, 
- *              null otherwise.
- */
-function hello_theme_run_if_classicpress_version_greater_than_2_0(callable $callback) {
-    if (version_compare(classicpress()->version(), '2.0', '>')) {
-        return call_user_func($callback);
-    }
-
-    return null;
 }
 
 /** 
