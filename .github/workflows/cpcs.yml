@@ -14,7 +14,7 @@ jobs:
             sed -i '/^\t<!-- start config -->.*/a\
               <file>.</file>
               ' phpcs.xml
-            sed -i '/MY_DOMAIN/ s//xxxxxxxx/' phpcs.xml
+            sed -i '/MY_DOMAIN/ s//hello-theme/' phpcs.xml
         - name: CPCS checks
           uses: 10up/wpcs-action@stable
           with:

@@ -22,7 +22,7 @@ There is a theme unit data xml file for testing themes which does not have the W
 - Stylesheet Header requirements
 - Image folder for assets (includes blank banner starter. Naming convention is `banner-1544x500`)
 - Blank screenshot.png (for size reference)
-- PHP Code Standard unit test file (optional) change line 17 `xxxxxxxx` to match your text-domain.
+- PHP Code Standard unit test file (optional) change line 17 `hello-theme` to match your text-domain.
 
 === Links ===
 
