@@ -1,7 +1,7 @@
 ![Appealing banner](images/banner-1544x500.png)
 
 # Hello Theme
-This file is REQUIRED and is overridden by the typically used WP file, readme.txt - Please do not forget to include this file in a new theme. Read the `readme.txt` file to learn what this Hello Theme does.
+This file is REQUIRED and is overridden by the typically used WP file, hello-theme.txt - Please do not forget to include this file in a new theme. Read the `readme.txt` file to learn what this Hello Theme does.
 
 Requires PHP: 7.4
 
