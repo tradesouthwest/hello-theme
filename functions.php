@@ -3,7 +3,6 @@
  * Functions for theme Hello-Theme
  * Sets up theme defaults and registers support for various WordPress features.
  * 
- * @package    WordPress
  * @package    ClassicPress
  * @subpackage Hello Theme
  * @since      1.0.1
@@ -57,7 +56,7 @@ function hello_theme_theme_setup() {
 }
 
 add_action( 'after_setup_theme', 'hello_theme_theme_setup' );
-endif
+endif;
 
 
 /**
@@ -65,14 +64,14 @@ endif
  * 
  * @since 1.0
  */
-if ( ! function_exists( 'wp_body_open' ) ) {
+if ( ! function_exists( 'wp_body_open' ) ) :
     /**
     * Add backwards compatibility support for wp_body_open function.
     */
     function wp_body_open() {
         do_action( 'wp_body_open' );
     }
-}
+endif;
 
 /** 
  * Sets the content width in pixels, based on the theme's design and stylesheet.
