@@ -12,6 +12,8 @@
 	exit( 'Direct script access denied.' );
 }
 
+if ( !defined ( 'HELLO_THEME_VER' ) ) { define ( 'HELLO_THEME_VER', '1.0.0' ); }
+
 /** 
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -35,7 +37,7 @@ if ( ! function_exists( 'hello_theme_theme_setup' ) ) :
 
 function hello_theme_theme_setup() {
     /**
-     * Not used in ClassicPress < 2.0 
+     * Not used in ClassicPress > 2.0 
      * to output valid HTML5.
      */ 
     if ( function_exists( 'is_classicpress' ) && version_compare( '2.0', $cp_version, '<' ) ) {
@@ -53,6 +55,13 @@ function hello_theme_theme_setup() {
 	* Translations can be added to the /languages/ directory.
 	*/
     load_theme_textdomain( 'hello-theme', get_template_directory_uri() . '/languages' );
+
+    // This theme uses wp_nav_menu() in one location.
+    register_nav_menus(
+        array(
+            'primary-menu' => __( 'Primary Main Menu', 'myhero' ),
+        )
+    );
 }
 
 add_action( 'after_setup_theme', 'hello_theme_theme_setup' );
@@ -88,3 +97,57 @@ function hello_theme_theme_content_width()
 }
 
 add_action( 'after_setup_theme',        'hello_theme_theme_content_width', 0 ); 
+
+/** 
+ * Enqueues scripts and styles.
+ *
+ * @since 1.0.0 
+ */
+function hello_theme_enqueue_styles() {
+	wp_enqueue_style( 
+		'hello-theme-style', 
+		get_stylesheet_directory_uri() .'/style.css',
+		array(),
+		HELLO_THEME_VER
+	);
+    
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 
+			'comment-reply' 
+		);
+	}
+}
+add_action( 'wp_enqueue_scripts',       'hello_theme_enqueue_styles' );
+
+/**
+ * Registers a widget area.
+ *
+ * @link https://developer.wordpress.org/reference/functions/register_sidebar/
+ *
+ * @since 1.0
+ */
+function hello_theme_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Sidebar', 'myhero' ),
+			'id'            => 'sidebar-page',
+			'description'   => __( 'Add widgets here to appear in your sidebar.', 'hello-theme' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+}
+add_action( 'widgets_init',             'hello_theme_widgets_init' );
+
+/** 
+ * Customizer
+ * suport footer background & text color
+ * header background & color
+ * page background & color
+ */
+
+/* Adding files here to apply to the following functions below */
+//require get_template_directory() . '/inc/customizer.php';
