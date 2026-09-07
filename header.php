@@ -27,7 +27,7 @@
     <?php wp_body_open(); ?>
 
     <a class="skip-link screen-reader-text" aria-label="first content" href="#sitecontent">
-        <?php esc_html_e( 'Skip to content', 'myhero' ); ?>
+        <?php esc_html_e( 'Skip to content', 'hello-theme' ); ?>
     </a>
     
     <!-- nav or top section can go here -->

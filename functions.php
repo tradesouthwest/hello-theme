@@ -59,7 +59,7 @@ function hello_theme_theme_setup() {
     // This theme uses wp_nav_menu() in one location.
     register_nav_menus(
         array(
-            'primary-menu' => __( 'Primary Main Menu', 'myhero' ),
+            'primary-menu' => __( 'Primary Main Menu', 'hello-theme' ),
         )
     );
 }
@@ -130,7 +130,7 @@ function hello_theme_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __( 'Sidebar', 'myhero' ),
+			'name'          => __( 'Sidebar', 'hello-theme' ),
 			'id'            => 'sidebar-page',
 			'description'   => __( 'Add widgets here to appear in your sidebar.', 'hello-theme' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
