@@ -24,6 +24,22 @@ There is a theme unit data xml file for testing themes which does not have the W
 - Image folder for assets (includes blank banner starter. Naming convention is `banner-1544x500`)
 - PHP Code Standard unit test file (optional) change line 17 `hello-theme` to match your text-domain.
 
+== File List ==
+
+|-- inc
+|    |-- customizer
+|-- languages
+|    |-- hello-theme.pot
+|-- README.md
+|-- footer.php
+|-- functions.php
+|-- header.php
+|-- hello-theme.txt
+|-- index.php
+|-- screenshot.png
+|-- sidebar.php
+|-- style.css
+
 === Links ===
 
 - All the requirements for plugins/themes can be found here for the directory: https://docs.classicpress.net/plugin-guidelines/directory-requirements/
