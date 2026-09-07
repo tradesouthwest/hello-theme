@@ -25,16 +25,10 @@ get_header();
                             ), '</a></h2>' ); ?>
 
                 </header>
-					<span class="excerpt-post">
+					<span class="content-post">
                             
                         <?php 
-                        if ( is_single() ) { 
-                            the_excerpt(); 
-                            } 
-                            else {
-                                the_content(); 
-                                } 
-                        ?>
+                            the_content(); ?>
                         
                     </span>
 			</div>
