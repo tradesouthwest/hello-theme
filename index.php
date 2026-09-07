@@ -9,7 +9,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-    <section class="index-page-body">
+    <section id="sitecontent" class="index-page-body">
 
         <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
@@ -27,7 +27,14 @@ get_header();
                 </header>
 					<span class="excerpt-post">
                             
-                        <?php the_excerpt(); ?>
+                        <?php 
+                        if ( is_single() ) { 
+                            the_excerpt(); 
+                            } 
+                            else {
+                                the_content(); 
+                                } 
+                        ?>
                         
                     </span>
 			</div>
@@ -39,9 +46,10 @@ get_header();
 			endif; ?>
 
 	</section>
-	        <aside class="blog-sidebar">
-		
-	            <?php get_sidebar(); ?>
+        <aside class="blog-sidebar">
+    
+            <?php get_sidebar(); ?>
 
-	        </aside>
+        </aside>
 </main>
+<?php get_footer(); ?>

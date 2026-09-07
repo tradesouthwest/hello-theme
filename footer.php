@@ -10,6 +10,7 @@
 ?>
 
 <footer class="page-footer">
+    <hr><!-- for test only -->
      <div class="site-copyright">
         <small><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="bookmark">
         <?php 

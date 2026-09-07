@@ -26,8 +26,27 @@
 
     <?php wp_body_open(); ?>
 
-    <a class="skip-link screen-reader-text" aria-label="first content" href="#sitecontent">
+    <a class="skip-link screen-reader-text" aria-label="first content" 
+        href="#sitecontent">
         <?php esc_html_e( 'Skip to content', 'hello-theme' ); ?>
     </a>
     
-    <!-- nav or top section can go here -->
+        <!-- nav or top section can go here -->
+        <nav class="page-nav-wrapper" aria-label="Primary" style="[for toggle]">
+            <div id="page_nav" class="nav-wrapper">
+
+            <details><summary style="padding:1.67em;">|||</summary>
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location'  => 'primary-menu',
+                    'depth'          => 3,
+                    'container'     => 'div',
+                    'menu_class'   => 'page-nav',
+                    'fallback_cb' => 'wp_page_menu',
+                )
+            ); ?>
+                </details>
+            </div>
+        </nav>
+        <hr><!-- hr just for test -->
